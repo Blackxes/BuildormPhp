@@ -1,0 +1,74 @@
+
+
+html { font: 16px "Consolas"; }
+html * { margin: 0; padding: 0; }
+html, body { top: 0; left: 0; width: 100%; letter-spacing: 0.5px; background: transparent; }
+
+ul, li { list-style-type: none; }
+ul > li { width: 100%; padding-bottom: 0.5rem; }
+ul, li { overflow: hidden; }
+
+h1 { font-size: 2.18rem; }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.64rem; }
+h4 { font-size: 1.43rem; }
+h5 { font-size: 1.28rem; }
+h6 { font-size: 1.18rem; }
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0.6em; font-weight: 400; }
+h1 { width: 100%; text-align: center; }
+span, label, p { font-size: 1rem; margin-bottom: 1rem; font-weight: 400; }
+h1, h2, h3, h4, h5, h6, span, label, p { vertical-align: -webkit-baseline-middle; }
+li > p { margin-bottom: 0; padding: 0.5rem 0; }
+
+[disabled] { user-select: none; pointer-events: none; filter: brightness(0.8); }
+
+/* container */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-12, .col-12 { display: block; overflow: hidden; width: 100%; }
+.col-1 { max-width: 8.33%; } .col-2 { max-width: 16.66%; } .col-3 { max-width: 25%; }
+.col-4 { max-width: 33.33%; } .col-5 { max-width: 41.67%; } .col-6 { max-width: 50%; }
+.col-7 { max-width: 58.33%; } .col-8 { max-width: 66.66%; } .col-9 { max-width: 75%; }
+.col-10 { max-width: 83.33%; } .col-11 { max-width: 91.66%; } .col-12 { max-width: 100%; }
+
+/* -------------------------------------------------------------------------------------------- */
+/* adjustments */
+body { margin: 40px auto 0; max-width: 900px; margin-bottom: 500px; }
+
+form { margin-bottom: 30px; border: 1px solid #999; color: #000; }
+form h4, form p { margin-bottom: 0; }
+
+input, select, button { padding: 5px 10px; max-width: 33.55%; width: 100%; border: none; border-bottom: 2px solid #333; font-size: 16px; }
+input::placeholder { font-size: 12px; }
+input[type="submit"] { min-width: 150px; background: #439e6c; }
+input[type="radio"] { position: relative; }
+textarea { width: 100%; height: 80px; }
+
+input:hover, select:hover, button:hover { cursor: pointer; }
+input[type="submit"]:hover, button:hover { background: #54c185; }
+input:focus, select:focus, button:focus, textarea:focus { outline: none; border-bottom-color: #439e6c; }
+textarea:focus { border-color: #439e6c; }
+
+.item { margin-bottom: 20px; padding: 0 20px; box-sizing: border-box; overflow: hidden; }
+.item * { box-sizing: border-box; }
+
+/* horizontal item mode */
+.item.h { display: flex; }
+.item.h > * { flex: 1; }
+.item.h .field-label { margin-right: 20px; }
+.item.h input, .item.h select, .item.h button { max-width: 100%; }
+
+/* labels and content */
+.item .field-label { margin-bottom: 10px; padding: 5px ; background: #e0e0e0; border-bottom: 2px solid #c0c0c0; }
+.item .field-label label { margin: 0; display: block; }
+.item .field-description { font-size: 12px; color: #777; }
+.title { margin: 0 -20px; padding: 5px 20px; font-size: 20px; background: #e0e0e0; border-bottom: 1px solid #999; }
+
+/* capsulated fields */
+.item .item { margin: 0 0 5px 0; padding: 0; }
+.item .item > * { padding: 0; }
+.item .item .field-label { margin-bottom: 0; background: initial; border: none; }
+.item .item .field-label label { margin-bottom: 0; }
+
+.required .field-label, .required .field-value > * { background: #ffdcdc; border-color: #be0000; }
+
+.s { color: #2e1114; color: #501b1d; color: #64485c; color: #83677b; color: #adadad; }
+.d { color: #caebf2; color: #a9a9a9; color: #ff3b3f; color: #efefef; }
